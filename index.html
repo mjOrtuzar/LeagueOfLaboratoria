@@ -2,7 +2,8 @@
 
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+
 
     <script>
         window.fbAsyncInit = function() {
@@ -31,12 +32,12 @@
     <script>
         // Initialize Firebase
         var config = {
-            apiKey: "AIzaSyAICugXdOkIdM_97Kjhd52gvBLI5FBeLNg",
-            authDomain: "leagueoflaboratoria.firebaseapp.com",
-            databaseURL: "https://leagueoflaboratoria.firebaseio.com",
-            projectId: "leagueoflaboratoria",
-            storageBucket: "",
-            messagingSenderId: "391057320118"
+            apiKey: "AIzaSyAM3dMokvATgAAIt4KszBakXIPf0TtZt5s",
+            authDomain: "test-136e1.firebaseapp.com",
+            databaseURL: "https://test-136e1.firebaseio.com",
+            projectId: "test-136e1",
+            storageBucket: "test-136e1.appspot.com",
+            messagingSenderId: "263993525407"
         };
         firebase.initializeApp(config);
     </script>
@@ -44,7 +45,7 @@
 
 <body>
     <h1>League of Laboratoria</h1>
-    <input type="button" onclick="facebookLogin()">Login con Facebook</input>
+    <input type="button" onclick="facebookLogin()" value="Login con Facebook">
     <div id="champions"></div>
 
     <script src="assets/app.js"></script>
