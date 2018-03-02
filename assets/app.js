@@ -167,3 +167,19 @@ function facebookLogin() {
         console.log("Error > " + error);
     });
 }
+
+
+function subirArchivos() {
+    var storage = firebase.storage()
+    var storageRef = firebase.storage().ref();
+
+    var file = document.getElementById('subeTuBasura').files[0];
+    console.log(file);
+
+    var thisRef = storageRef.child("archivos subidos / " + file.name);
+
+    thisRef.put(file).then(function(snapshot) {
+        console.log('uploaded a blob or file!');
+    })
+
+}

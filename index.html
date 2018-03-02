@@ -4,7 +4,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
 
-
     <script>
         window.fbAsyncInit = function() {
             FB.init({
@@ -29,25 +28,26 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyAM3dMokvATgAAIt4KszBakXIPf0TtZt5s",
-            authDomain: "test-136e1.firebaseapp.com",
-            databaseURL: "https://test-136e1.firebaseio.com",
-            projectId: "test-136e1",
-            storageBucket: "test-136e1.appspot.com",
-            messagingSenderId: "263993525407"
-        };
-        firebase.initializeApp(config);
-    </script>
+    
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAM3dMokvATgAAIt4KszBakXIPf0TtZt5s",
+    authDomain: "test-136e1.firebaseapp.com",
+    databaseURL: "https://test-136e1.firebaseio.com",
+    projectId: "test-136e1",
+    storageBucket: "test-136e1.appspot.com",
+    messagingSenderId: "263993525407"
+  };
+  firebase.initializeApp(config);
+</script>
 </head>
 
 <body>
     <h1>League of Laboratoria</h1>
     <input type="button" onclick="facebookLogin()" value="Login con Facebook">
-    <div id="champions"></div>
-
+    <input type="button" onclick="subirArchivos()" value="sube tu basura" id="subeTuBasura">
     <script src="assets/app.js"></script>
 </body>
 
